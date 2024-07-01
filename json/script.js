@@ -9,6 +9,12 @@ async function afficherName() {
             id: 'Nickname',
             name: 'Peudonyme'
         }, {
+            id: 'FirstName',
+            name:'Prenom'
+        }, { 
+            id: 'LastName',
+            name: 'Nom'
+        }, {
             id: 'FighterId',
             name: 'ID'
         }, {
