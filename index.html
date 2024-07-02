@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ufc projet</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    
 
 </head>
 
@@ -20,6 +23,8 @@
             <a class="font-bold hover:underline" href="#boutique">Boutique</a>
             <a class="font-bold hover:underline" href="calendrier.html">Calendrier</a>
             <a class="font-bold hover:underline" href="contact.html">Contact</a>
+            <a class="font-bold hover:underline" href="#Inscription">Inscris-toi</a>
+
         </nav>
 
         <img class="flex justify-center object-none " src="image/UFC LOGO.jpeg" alt="logo ufc">
@@ -66,20 +71,55 @@
 
     </section>
 
-    <section class="w-[1140px] m-auto border-t-4">
+    <section class="w-[1140px] m-auto border-t-4 pad">
 
-        <h2 id="boutique" class="text-xl pb-[5%] underline pt-[7%] font-bold">BOUTIQUE</h2>
+        <h2 id="boutique" class="text-xl underline pt-[7%] font-bold">BOUTIQUE</h2>
 
         <article>
-            <ul class="flex flex-row">
-
-                <li><img class="w-[70%] h-[70%]" src="image/casqueufc.webp" alt=""></li>
-                <li><img class="w-[70%] h-[70%]" src="image/gantufc.avif" alt=""></li>
-                <li><img class="w-[70%] h-[70%]" src="image/protegedent.jpg" alt=""></li>
-                <li><img class="w-[70%] h-[70%]" src="image/shortufc.webp" alt=""></li>
-
+            <ul class="flex flex-row gap-[4%]">
+                <div class="wrapper">
+                    <div class="image">
+                        <li><img class="w-[60%] h-[60%]" src="image/casqueufc.webp" alt=""></li>
+                        <div class="content">
+                            <h1>Casque UFC</h1>
+                            <p>Casque d'entraînement de boxe Coloris Rouge et noir <br> Taille standard</p> <br>
+                            <p class="font-bold">47,95€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="image">
+                        <li><img class="w-[60%] h-[60%]" src="image/gantufc.avif" alt=""></li>
+                        <div class="content">
+                            <h1>Gant UFC</h1>
+                            <p>Gant d'entrainement de boxe en similicuir</p> <br>
+                            <p class="font-bold">99,98€</p>
+                        </div>
+                    </div>
+                </div>
             </ul>
-
+            <ul class="flex flex-row gap-[4%]">
+                <div class="wrapper">
+                    <div class="image">
+                        <li><img class="w-[60%] h-[60%]" src="image/protegedent.jpg" alt=""></li>
+                        <div class="content">
+                            <h1>Protege dent</h1>
+                            <p>Protege dent de boxe UFC coloris noir et blanc</p> <br>
+                            <p class="font-bold">22,40€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="image">
+                        <li><img class="w-[60%] h-[60%]" src="image/shortufc.webp" alt=""></li>
+                        <div class="content">
+                            <h1>Short UFC</h1>
+                            <p>Short UFC vert kaki détails orange</p> <br>
+                            <p class="font-bold">41,99€</p>
+                        </div>
+                    </div>
+                </div>
+            </ul>
         </article>
 
     </section>
@@ -96,7 +136,8 @@
             C’est une
             obsession. Le talent n’existe pas."</P>
         <p class="text-sm text-center text-black font-bold">Conor McGregor</p> <br>
-        <button class="border border-solid border-black border-8 text-xl bg-black text-white flex justify-center"
+        <button id="Inscription"
+            class="border border-solid border-black border-8 text-xl bg-black text-white flex justify-center"
             type="button">INSCRIS-TOI</button>
 
 
@@ -168,6 +209,7 @@
 
     </footer>
 
+    
 </body>
 
 </html>
