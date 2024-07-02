@@ -7,6 +7,8 @@
     <title>Ufc projet</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
     
     
 
@@ -35,43 +37,24 @@
         <h2 class="text-xl pb-[5%] underline pt-[7%] font-bold">ACTUALITE</h2>
 
         <div class="flex flex-row gap-[5%] items-center">
-            <div>
-                <img class="w-[80%]" src="image/interviewimage.jpg" alt="Interview d'un combattant">
-                <p>
-                    Fruitcake oat cake carrot cake sweet chocolate bar. Jelly-o macaroon jelly beans bear claw candy
-                    fruitcake
-                    jelly beans lemon drops sweet roll. Fruitcake cake ice cream apple pie sweet roll biscuit chocolate
-                    cake.
-                    Dragée bear claw chupa chups halvah bear claw icing pie brownie jelly beans. Cake bear claw
-                    croissant
-                    dessert sesame snaps topping fruitcake sweet roll. Chupa chups cake biscuit biscuit apple pie carrot
-                    cake
-                    dragée gummies.
-
-                </p>
-            </div>
-            <div>
-                <img class="w-[70%]" src="image/imageciryl.jpg" alt="Cyril Gane image">
-                <p>
-                    Fruitcake oat cake carrot cake sweet chocolate bar. Jelly-o macaroon jelly beans bear claw candy
-                    fruitcake
-                    jelly beans lemon drops sweet roll. Fruitcake cake ice cream apple pie sweet roll biscuit chocolateg
-                    cake.
-                    Dragée bear claw chupa chups halvah bear claw icing pie brownie jelly beans. Cake bear claw
-                    croissant
-                    dessert sesame snaps topping fruitcake sweet roll. Chupa chups cake biscuit biscuit apple pie carrot
-                    cake
-                    dragée gummies.
-
-
-                </p>
-            </div>
+            <div id="carou" class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide w-[50%] h-[50%]"><img src="image/khamzatchimaev.jpg" alt="Khamzat"></li>
+                          <li class="splide__slide w-[50%] h-[50%]"><img src="image/francis-ngannou-pfl.jpg" alt="Francis"></li>
+                          <li class="splide__slide w-[50%] h-[50%]"><img src="image/ufcgamecover.webp" alt="Ufc cover game">
+                            <li class="splide__slide w-[50%] h-[50%]"><img src="image/conor_image.jpg" alt="Conor">
+                          </li>
+                      </ul>
+                </div>
+              </div>
+        
         </div>
 
 
     </section>
 
-    <section class="w-[1140px] m-auto border-t-4 pad">
+    <section class="w-[1140px] m-auto border-t-4">
 
         <h2 id="boutique" class="text-xl underline pt-[7%] font-bold">BOUTIQUE</h2>
 
@@ -209,6 +192,10 @@
 
     </footer>
 
+    <script>
+        new Splide('#carou').mount();
+    </script>
+    
     
 </body>
 
