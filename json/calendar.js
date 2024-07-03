@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
       initialView: 'dayGridMonth',
       events: addevent,
       selectable: true,
+      
     });
     calendar.render();
   })

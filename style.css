@@ -18,12 +18,15 @@
 .image {
     width: 500px;
     position: relative;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
 }
 
 #imagegant {
     width: 100%;
     display: block;
     margin: auto;
+    
 
 }
 
@@ -76,9 +79,12 @@
 }
 
 
+/* style nav */
 
 
-
+#textnav:hover {
+ color: rgb(220 38 38);;
+}
 
 
 
@@ -89,3 +95,50 @@
 
 /* curseur d'image actualité */
 
+
+
+
+
+
+/* boutton inscription style */
+
+#Inscription {
+    border-radius: 4px;
+    background-color: #5ca1e1;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 16px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 36px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  }
+  
+  #Inscription {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #Inscription:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #Inscription:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+  #Inscription:hover:after {
+    opacity: 1;
+    right: 10px;
+  }

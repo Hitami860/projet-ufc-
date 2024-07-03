@@ -31,6 +31,7 @@ async function afficherName() {
         limit: 15,
 
         data: name,
+        
 
     }).render(document.getElementById('tableau'));
 }
