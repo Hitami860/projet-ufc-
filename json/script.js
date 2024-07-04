@@ -10,8 +10,8 @@ async function afficherName() {
             name: 'Peudonyme'
         }, {
             id: 'FirstName',
-            name:'Prenom'
-        }, { 
+            name: 'Prenom'
+        }, {
             id: 'LastName',
             name: 'Nom'
         }, {
@@ -31,8 +31,22 @@ async function afficherName() {
         limit: 15,
 
         data: name,
-        
+
 
     }).render(document.getElementById('tableau'));
 }
 afficherName()
+
+
+/* burger boutton responsive */
+
+let bttn = document.getElementById('bttn')
+let navigation = document.getElementById('navigation')
+let appears = bttn.addEventListener('click', () => {
+    if (navigation.classList.contains('hidden')) {
+        navigation.classList.remove('hidden')
+    }
+    else {
+        navigation.classList.add('hidden')
+    }
+})
