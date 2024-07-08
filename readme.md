@@ -1,4 +1,4 @@
-﻿# Introduction
+# Introduction
 
 Le projet que j'ai réalisé est sur thème de l'UFC, l'objectif était de recréer le site web de l'UFC de manière personnalisée dans le cadre d'un TP en y intégrant du JavaScript.
 Pour ce projet j'ai utilisé Tailwind css, Grid js , full callendar, Splide. 
